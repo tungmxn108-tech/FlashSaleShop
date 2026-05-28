@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 20
+    commands:
+      - echo "No build step needed for static website"
+  build:
+    commands:
+      - echo "Preparing artifact for CodeDeploy"
+      - ls -la
+
+artifacts:
+  files:
+    - '**/*'

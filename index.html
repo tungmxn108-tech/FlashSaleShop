@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flash Sale Shop</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="navbar">
+      <div class="logo">FlashSale</div>
+      <a href="#products" class="nav-link">Shop Now</a>
+    </nav>
+
+    <section class="hero-content">
+      <p class="badge">AWS DevOps Lab</p>
+      <h1>Big Sale Is Live</h1>
+      <p class="subtitle">
+        A simple static shopping website for practicing GitHub, CodePipeline,
+        CodeDeploy, Auto Scaling Group, Lifecycle Hook, Warm Pool, and ALB health checks.
+      </p>
+      <a href="#products" class="button">View Deals</a>
+    </section>
+  </header>
+
+  <main>
+    <section class="stats">
+      <div>
+        <strong>99.9%</strong>
+        <span>Availability Goal</span>
+      </div>
+      <div>
+        <strong>ASG</strong>
+        <span>Auto Scaling Ready</span>
+      </div>
+      <div>
+        <strong>ALB</strong>
+        <span>Health Check Enabled</span>
+      </div>
+    </section>
+
+    <section id="products" class="products">
+      <h2>Featured Deals</h2>
+      <div class="grid">
+        <article class="card">
+          <span class="tag">-30%</span>
+          <h3>Wireless Headphones</h3>
+          <p>Great sound for daily coding sessions.</p>
+          <button>Add to Cart</button>
+        </article>
+
+        <article class="card">
+          <span class="tag">-45%</span>
+          <h3>Mechanical Keyboard</h3>
+          <p>Fast, reliable, and perfect for DevOps work.</p>
+          <button>Add to Cart</button>
+        </article>
+
+        <article class="card">
+          <span class="tag">-25%</span>
+          <h3>Cloud Notebook</h3>
+          <p>Write your AWS architecture notes clearly.</p>
+          <button>Add to Cart</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="health">
+      <h2>Application Health</h2>
+      <p id="health-status">Checking...</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Version: <strong>v1.0.0</strong> | Deployed with AWS CodeDeploy</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
