@@ -17,21 +17,21 @@ Open `index.html` in your browser.
 
 ## CodeDeploy Files
 
-| File | Purpose |
-|---|---|
-| `appspec.yml` | Defines deployment destination and lifecycle scripts |
-| `buildspec.yml` | Creates artifact for CodePipeline/CodeBuild |
-| `scripts/install_dependencies.sh` | Installs Nginx |
-| `scripts/start_server.sh` | Starts Nginx |
-| `scripts/validate_service.sh` | Validates app health |
+| File                              | Purpose                                              |
+| --------------------------------- | ---------------------------------------------------- |
+| `appspec.yml`                     | Defines deployment destination and lifecycle scripts |
+| `buildspec.yml`                   | Creates artifact for CodePipeline/CodeBuild          |
+| `scripts/install_dependencies.sh` | Installs Nginx                                       |
+| `scripts/start_server.sh`         | Starts Nginx                                         |
+| `scripts/validate_service.sh`     | Validates app health                                 |
 
 ## Recommended ALB Health Check
 
-| Setting | Value |
-|---|---|
-| Protocol | HTTP |
-| Path | `/health.html` |
-| Success code | `200` |
+| Setting      | Value          |
+| ------------ | -------------- |
+| Protocol     | HTTP           |
+| Path         | `/health.html` |
+| Success code | `200`          |
 
 ## Deployment Destination
 
